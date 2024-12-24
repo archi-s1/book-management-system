@@ -1,0 +1,21 @@
+create database bookend;
+
+create table books(bid int primary key, title varchar(50), price int, quantity int, author_pub varchar(30), pubID int);
+
+create table sales(BillID int primary key,custname varchar(30),bidsold int, saledt char(10), price int, qty int);
+
+insert into books values(1010,"Three men in a boat",150,35,"jerome k jerome",123456789),
+(1002,"The family upstairs",114,5,"eloquent tales",2305005),
+(1003,"all the missing girls",100,10,"the dancing pages",3366991),
+(1006,"kidnapped",140,15,"big idea publishers",10433214),
+(1001,"the moonstone",150,45,"beach roads publishing",7896540),
+(1005,"silence",210,45,"ABC publishers",23451),
+(1008,"the outside boy",115,5,"good global reads",10987654);
+
+insert into sales values(1001,"Riya ",1006,'2022-12-22',100,5),
+(1002,"shyam",1001,"2022-10-23",100,5),
+(1003,"Ram",1004,"2022-12-13",100,5),
+(1005,"Stefan",1002,"2022-10-23",114,2),
+(1011,"joseph",1005,"2022-12-31",234,7),
+(1012,"charles",1005,"2022-02-03",213,6),
+(1013,'elena',1010,"2023-01-02",50,10);
